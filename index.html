@@ -5,18 +5,54 @@
         <meta name="viewport" content ="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <svg width="100%" height="300" version ="1.1"
-        xmlns = "http://www.w3.org/2000/svg">
-            <rect width = "100%" height="100%" fill="purple"/>
-            <polygon id="power" points="130,43.4 180,130 80,130" fill="rgb(255,255,0)"></polygon>
-            <polygon id="wisdom" points="80,130 130,216.6,30,216.6 " fill="rgb(255,255,0)"></polygon>
-            <polygon id="courage" points="180,130 230,216.6,120,216.6" fill="rgb(255,255,0)"></polygon>
-            <rect x = "300" y="45" width="175" height="175" fill="white"/>
+        <svg  width="100%" height="300px" xmlns = "http://www.w3.org/2000/svg" version="1.1">
+            <rect width = "100%" height="100%" fill="purple"></rect>
+            <rect x = "65%" y="0" height ="100%"width ="18%"fill ="green" ></rect>
+            <polygon id="power" points="130,43.4 180,130 80,130" fill="yellow"></polygon>
+            <polygon id="wisdom" points="80,130 130,216.6,30,216.6 " fill="yellow"></polygon>
+            <polygon id="courage" points="180,130 230,216.6,120,216.6" fill="yellow"></polygon>
+            <rect x = "300" y="45" width="175" height="175" fill="gray"/>
             <circle cx = "387" cy="132.5" r="87" fill="black"/> 
             <text x="155" y="280" font-family = "sans-serif" font-size ="57" fill ="white">
                 GHOST
             </text>
-
-    </svg>
+        </svg>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="views/two.html">Page Two</a></li>
+                <li><a href="views/three.html">Page Three</a></li>
+            </ul>
+        </nav>
+        <h1>
+            Assignment 2
+        </h1>
+        <h2 class ="css-question">
+            How to apply CSS to HTML
+        </h2>
+        <p class="css-question">
+            To apply an external CSS file within a HTML file you need to use the link tag inside 
+            the head of your HTML document. <p>Example: <code>&ltlink rel="stylesheet" href="styles.css"&gt</code> </p>
+            <p>In the example above, <code>rel="stylesheet"</code> tells your browser that the file is a stylesheet, 
+             while <code>href="styles.css"</code> will specify the path to your CSS file. 
+            If the CSS file is in the same directory as your HTML file, the file name should suffice. 
+            Otherwise, you must provide the full path to the CSS file.</p>
+        </p>
+        <h2 class="js-question">
+            How to use JavaScript in a Webpage
+        </h2>
+        <p class="js-question">
+            To link an external JavaScript file within a HTML file you need to use the script tag, 
+            either in the head or just before the closing body tag within the HTML document. <p>Example: 
+            <code>&ltscript src="script.js"&gt&lt/script&gt</code></p> <p>In the example above 
+            <code>src="script.js"</code> specifies the location of the JavaScript file. If the file is in the same 
+            directory as the HTML file, you only need the file name. Otherwise, you must provide the full path to the file.</p>
+            <p>To write JavaScript directly within a HTML file, you still need to use the script tag. Though it is 
+            possible to write it within the head of the HTMl file, it is best to write it before the end of the body 
+            section to make sure page content is loaded before the script runs.</p><p>Example:</p><p><code>&ltbody&gt</code></p>
+            <p>&nbsp;<code>&ltscript&gt</code></p><p>&nbsp;&nbsp; //Javascript code goes here</p><p>&nbsp;&nbsp;<code>
+            console.log("Javascript at bottom of body is running");</code></p><p>&nbsp;<code>&lt/script&gt</code></p>
+            <p><code>&ltbody&gt</code></p>
+        </p>
     </body>
 </html>
